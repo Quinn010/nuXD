@@ -969,7 +969,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	clefairy: {
 		num: 35,
 		name: "Clefairy",
-		types: ["Fairy"],
+		types: ["Normal"],
 		genderRatio: {M: 0.25, F: 0.75},
 		baseStats: {hp: 70, atk: 45, def: 48, spa: 60, spd: 65, spe: 35},
 		abilities: {0: "Cute Charm", 1: "Magic Guard", H: "Friend Guard"},
@@ -984,7 +984,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	clefable: {
 		num: 36,
 		name: "Clefable",
-		types: ["Fairy"],
+		types: ["Normal"],
 		genderRatio: {M: 0.25, F: 0.75},
 		baseStats: {hp: 95, atk: 70, def: 73, spa: 95, spd: 90, spe: 60},
 		abilities: {0: "Cute Charm", 1: "Magic Guard", H: "Unaware"},
