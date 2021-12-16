@@ -59,23 +59,14 @@ export const Formats: FormatList = [
 		// no restrictions, for serious (other than team preview)
 		ruleset: ['Team Preview', 'Cancel Mod','HP Percentage Mod','Sleep Clause Mod', 'Dynamax Clause', 'Accuracy Moves Clause',],
 	},
-
 // Sw/Sh Doubles
 	///////////////////////////////////////////////////////////////////
-	
 	{
-		name: "[PokeMMO] vgc",
+		name: "[Gen 8] VGC 2021 Series 9",
 
 		mod: 'gen8',
 		gameType: 'doubles',
-		searchShow: false,
-		battle: {trunc: Math.trunc},
-		debug: true,
-		defaultLevel: 50,
-		maxLevel: 50,
-		// no restrictions, for serious (other than team preview)
-		ruleset: [
-		'Picked Team Size = 2', 'Max Team Size = 4',
-		'Team Preview', 'Cancel Mod','HP Percentage Mod','Sleep Clause Mod', 'Dynamax Clause','Accuracy Moves Clause'],}
+		ruleset: ['Flat Rules', '!! Adjust Level = 50', 'Standard NatDex', 'VGC Timer', 'allowtradeback'],
+	}
 
 ];
