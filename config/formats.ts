@@ -37,7 +37,6 @@ export const Formats: FormatList = [
 		name: "[PokeMMO] Practice singles",
 
 		mod: 'gen8',
-		searchShow: false,
 		debug: true,
 		battle: {trunc: Math.trunc},
 		defaultLevel: 50,
@@ -51,7 +50,6 @@ export const Formats: FormatList = [
 
 		mod: 'gen8',
 		gameType: 'doubles',
-		searchShow: false,
 		battle: {trunc: Math.trunc},
 		debug: true,
 		defaultLevel: 50,
@@ -62,11 +60,11 @@ export const Formats: FormatList = [
 // Sw/Sh Doubles
 	///////////////////////////////////////////////////////////////////
 	{
-		name: "[Gen 8] VGC 2021 Series 9",
+		name: "[Gen 8] VGC",
 
 		mod: 'gen8',
 		gameType: 'doubles',
 		ruleset: ['Flat Rules', '!! Adjust Level = 50', 'Standard NatDex', 'VGC Timer', 'allowtradeback'],
-	}
+	},
 
 ];
