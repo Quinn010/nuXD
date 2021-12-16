@@ -57,12 +57,11 @@ export const Formats: FormatList = [
 		// no restrictions, for serious (other than team preview)
 		ruleset: ['Team Preview', 'Cancel Mod','HP Percentage Mod','Sleep Clause Mod', 'Dynamax Clause', 'Accuracy Moves Clause',],
 	},
-// Sw/Sh Doubles
-	///////////////////////////////////////////////////////////////////
 	{
 		name: "[Gen 8] VGC",
 
 		mod: 'gen8',
+		debug: true,
 		gameType: 'doubles',
 		ruleset:
 		['Flat Rules', '!! Adjust Level = 50', 'VGC Timer']
