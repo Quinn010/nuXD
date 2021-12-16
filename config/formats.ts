@@ -67,10 +67,8 @@ export const Formats: FormatList = [
 		searchShow: false,
 		battle: {trunc: Math.trunc},
 		debug: true,
-		defaultLevel: 50,
-		maxLevel: 50,
 		// no restrictions, for serious (other than team preview
-			ruleset: ['Flat Rules', '!! Adjust Level = 50','VGC Timer'],
+			ruleset: ['Flat Rules', '!! Adjust Level = 50','VGC Timer','Team Preview', 'Cancel Mod','HP Percentage Mod','Sleep Clause Mod', 'Dynamax Clause'],
 	},
 
 
