@@ -34,7 +34,7 @@ export const Formats: FormatList = [
 		ruleset: ['PotD', 'Obtainable', 'Species Clause', 'HP Percentage Mod', 'Cancel Mod', 'Sleep Clause Mod'],
 	},
 	{
-		name: "[Gen 8] Custom Game",
+		name: "[Gen 8] Practice singles",
 
 		mod: 'gen8',
 		searchShow: false,
@@ -43,6 +43,38 @@ export const Formats: FormatList = [
 		defaultLevel: 50,
 		maxLevel: 50,
 		// no restrictions, for serious (other than team preview)
-		ruleset: ['Team Preview', 'Cancel Mod','HP Percentage Mod','Sleep Clause Mod'],
+		ruleset: ['Team Preview', 'Cancel Mod','HP Percentage Mod','Sleep Clause Mod', 'Dynamax Clause', 'Accuracy Moves Clause'],
 	},
+
+	{
+		name: "[Gen 8] Practice doubles",
+
+		mod: 'gen8',
+		gameType: 'doubles',
+		searchShow: false,
+		battle: {trunc: Math.trunc},
+		debug: true,
+		defaultLevel: 50,
+		maxLevel: 50,
+		// no restrictions, for serious (other than team preview)
+		ruleset: ['Team Preview', 'Cancel Mod','HP Percentage Mod','Sleep Clause Mod', 'Dynamax Clause', 'Accuracy Moves Clause'],
+	},
+	{
+		name: "[Gen 8] Practice VGC",
+
+		mod: 'gen8',
+		gameType: 'doubles',
+		searchShow: false,
+		battle: {trunc: Math.trunc},
+		debug: true,
+		defaultLevel: 50,
+		maxLevel: 50,
+		// no restrictions, for serious (other than team preview)
+		ruleset: [
+			'Picked Team Size = 2', 'Max Team Size = 4',
+			'Standard Doubles', 'Accuracy Moves Clause', 'Dynamax Clause', 'Sleep Clause Mod', 'VGC Timer',
+		],
+	},
+
+
 ];
