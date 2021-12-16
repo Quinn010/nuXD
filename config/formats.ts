@@ -57,8 +57,9 @@ export const Formats: FormatList = [
 		defaultLevel: 50,
 		maxLevel: 50,
 		// no restrictions, for serious (other than team preview)
-		ruleset: ['Team Preview', 'Cancel Mod','HP Percentage Mod','Sleep Clause Mod', 'Dynamax Clause', 'Accuracy Moves Clause','standard'],
+		ruleset: ['Team Preview', 'Cancel Mod','HP Percentage Mod','Sleep Clause Mod', 'Dynamax Clause', 'Accuracy Moves Clause',],
 	},
+
 	{
 		name: "[PokeMMO] vgc",
 
@@ -70,10 +71,10 @@ export const Formats: FormatList = [
 		defaultLevel: 50,
 		maxLevel: 50,
 		// no restrictions, for serious (other than team preview)
-		ruleset: ['Team Preview', 'Cancel Mod','HP Percentage Mod','Sleep Clause Mod', 'Dynamax Clause', 'Accuracy Moves Clause','standard','Max Team Size = 4'],
-	
-		},
-		
-
+		ruleset: [
+		'Picked Team Size = 2', 'Max Team Size = 4',
+		'Team Preview', 'Cancel Mod','HP Percentage Mod','Sleep Clause Mod', 'Dynamax Clause','Accuracy Moves Clause','Max Team Size = 4'
+	],
+		}
 
 ];
