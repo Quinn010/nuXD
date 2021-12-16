@@ -64,7 +64,7 @@ export const Formats: FormatList = [
 
 		mod: 'gen8',
 		gameType: 'doubles',
-		ruleset: ['Flat Rules', '!! Adjust Level = 50', 'Standard NatDex', 'VGC Timer', 'allowtradeback'],
+		ruleset: ['Flat Rules', '!! Adjust Level = 50', 'Standard NatDex', 'VGC Timer',],
 	},
 
 ];
