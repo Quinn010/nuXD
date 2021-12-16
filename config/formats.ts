@@ -62,6 +62,7 @@ export const Formats: FormatList = [
 
 		mod: 'gen8',
 		gameType: 'doubles',
+<<<<<<< HEAD
 		ruleset:
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -78,6 +79,9 @@ export const Formats: FormatList = [
 		['Picked Team Size = 4', 'Max Team Size = 6',
 		'Team Preview',]
 >>>>>>> parent of e20223cc3 (Update formats.ts)
+=======
+		ruleset: ['Team Preview',]
+>>>>>>> parent of 7541b9bad (Update formats.ts)
 	},
 
 ];
