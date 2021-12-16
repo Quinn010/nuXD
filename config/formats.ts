@@ -23,7 +23,7 @@ export const Formats: FormatList = [
 		section: "Sw/Sh Singles",
 	},
 	{
-		name: "[Gen 8] Random Battle",
+		name: "[Gen 8] Send duel to friends no ladder",
 		desc: `Randomized teams of level-balanced Pok&eacute;mon with sets that are generated to be competitively viable.`,
 		threads: [
 			`&bullet; <a href="https://www.smogon.com/forums/threads/3656537/">Random Battle Suggestions</a>`,
@@ -72,7 +72,7 @@ export const Formats: FormatList = [
 		// no restrictions, for serious (other than team preview)
 		ruleset: [
 			'Picked Team Size = 2', 'Max Team Size = 4',
-			'Standard Doubles', 'Accuracy Moves Clause', 'Dynamax Clause', 'Sleep Clause Mod', 'VGC Timer',
+			'Standard Doubles', 'Accuracy Moves Clause', 'Dynamax Clause', 'Sleep Clause Mod',
 		],
 	},
 
