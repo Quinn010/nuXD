@@ -62,26 +62,8 @@ export const Formats: FormatList = [
 
 		mod: 'gen8',
 		gameType: 'doubles',
-<<<<<<< HEAD
 		ruleset:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 		['Flat Rules', '!! Adjust Level = 50', 'VGC Timer']
-=======
-		['Picked Team Size = 4','Team Preview',]
->>>>>>> e20223cc3964fa401ca4e7d6c0f3ebb182b1095c
-=======
-		['Picked Team Size = 4', 'Max Team Size = 6',
-		'Team Preview',]
->>>>>>> parent of e57ea05b2 (Update formats.ts)
-=======
-		['Picked Team Size = 4', 'Max Team Size = 6',
-		'Team Preview',]
->>>>>>> parent of e20223cc3 (Update formats.ts)
-=======
-		ruleset: ['Team Preview',]
->>>>>>> parent of 7541b9bad (Update formats.ts)
 	},
 
 ];
