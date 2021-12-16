@@ -60,18 +60,16 @@ export const Formats: FormatList = [
 		ruleset: ['Team Preview', 'Cancel Mod','HP Percentage Mod','Sleep Clause Mod', 'Dynamax Clause', 'Accuracy Moves Clause','standard'],
 	},
 	{
-		name: "[PokeMMO] Practice VGC",
-
-		mod: 'gen8',
-		gameType: 'doubles',
+		
+		name: "[Gen 8] VGC 2021 Series 11",
 		searchShow: false,
 		battle: {trunc: Math.trunc},
 		debug: true,
-		defaultLevel: 50,
-		maxLevel: 50,
-		// no restrictions, for serious (other than team preview
-			ruleset: ['VGC Timer','Team Preview', 'standard'],
-	},
+		mod: 'gen8',
+		gameType: 'doubles',
+		// no restrictions, for serious (other than team preview)
+		ruleset: ['Flat Rules', '!! Adjust Level = 50', 'Min Source Gen = 8', 'VGC Timer','Standard NatDex'],
+		},
 
 
 ];
