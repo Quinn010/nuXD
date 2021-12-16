@@ -59,12 +59,14 @@ export const Formats: FormatList = [
 	},
 	{
 		name: "[Gen 8] VGC",
+		desc: `Randomized teams of level-balanced Pok&eacute;mon with sets that are generated to be competitively viable.`,
+		threads: [
+			`&bullet; <a href="https://www.smogon.com/forums/threads/3656537/">Random Battle Suggestions</a>`,
+		],
 
 		mod: 'gen8',
-		debug: true,
 		gameType: 'doubles',
-		ruleset:
-		['Flat Rules', '!! Adjust Level = 50', 'VGC Timer']
-	},
+		ruleset: ['Flat Rules', '!! Adjust Level = 50', 'VGC Timer'],
+	}
 
 ];
