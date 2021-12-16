@@ -23,7 +23,7 @@ export const Formats: FormatList = [
 		section: "Sw/Sh Singles",
 	},
 	{
-		name: "[Gen 8] Send duel to friends no ladder",
+		name: "Send duel to friends no ladder",
 		desc: `Randomized teams of level-balanced Pok&eacute;mon with sets that are generated to be competitively viable.`,
 		threads: [
 			`&bullet; <a href="https://www.smogon.com/forums/threads/3656537/">Random Battle Suggestions</a>`,
@@ -34,7 +34,7 @@ export const Formats: FormatList = [
 		ruleset: ['PotD', 'Obtainable', 'Species Clause', 'HP Percentage Mod', 'Cancel Mod', 'Sleep Clause Mod'],
 	},
 	{
-		name: "[Gen 8] Practice singles",
+		name: "PokeMMO Practice singles",
 
 		mod: 'gen8',
 		searchShow: false,
@@ -47,7 +47,7 @@ export const Formats: FormatList = [
 	},
 
 	{
-		name: "[Gen 8] Practice doubles",
+		name: "[PokeMMO] Practice doubles",
 
 		mod: 'gen8',
 		gameType: 'doubles',
@@ -60,7 +60,7 @@ export const Formats: FormatList = [
 		ruleset: ['Team Preview', 'Cancel Mod','HP Percentage Mod','Sleep Clause Mod', 'Dynamax Clause', 'Accuracy Moves Clause'],
 	},
 	{
-		name: "[Gen 8] Practice VGC",
+		name: "[PokeMMO] Practice VGC",
 
 		mod: 'gen8',
 		gameType: 'doubles',
@@ -69,11 +69,8 @@ export const Formats: FormatList = [
 		debug: true,
 		defaultLevel: 50,
 		maxLevel: 50,
-		// no restrictions, for serious (other than team preview)
-		ruleset: [
-			'Picked Team Size = 2', 'Max Team Size = 4',
-			'Standard Doubles', 'Accuracy Moves Clause', 'Dynamax Clause', 'Sleep Clause Mod',
-		],
+		// no restrictions, for serious (other than team preview
+			ruleset: ['Flat Rules', '!! Adjust Level = 50','VGC Timer'],
 	},
 
 
