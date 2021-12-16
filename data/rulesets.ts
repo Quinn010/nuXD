@@ -13,6 +13,7 @@ export const Formats: {[k: string]: FormatData} = {
 			'Obtainable', 'Team Preview', 'Sleep Clause Mod', 'Species Clause', 'Nickname Clause', 'OHKO Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod',
 		],
 	},
+	
 	standardnext: {
 		effectType: 'ValidatorRule',
 		name: 'Standard NEXT',
@@ -22,27 +23,13 @@ export const Formats: {[k: string]: FormatData} = {
 		],
 		banlist: ['Soul Dew'],
 	},
-	standardgbu: {
+	flatrules: {
 		effectType: 'ValidatorRule',
-		name: 'Standard GBU',
-		desc: "The standard ruleset for all official in-game Pok&eacute;mon tournaments and Battle Spot",
-		ruleset: ['Obtainable', 'Team Preview', 'Species Clause', 'Nickname Clause', 'Item Clause', 'Cancel Mod'],
-		banlist: ['Battle Bond',
-			'Mewtwo', 'Mew',
-			'Lugia', 'Ho-Oh', 'Celebi',
-			'Kyogre', 'Groudon', 'Rayquaza', 'Jirachi', 'Deoxys',
-			'Dialga', 'Palkia', 'Giratina', 'Phione', 'Manaphy', 'Darkrai', 'Shaymin', 'Arceus',
-			'Victini', 'Reshiram', 'Zekrom', 'Kyurem', 'Keldeo', 'Meloetta', 'Genesect',
-			'Xerneas', 'Yveltal', 'Zygarde', 'Diancie', 'Hoopa', 'Volcanion',
-			'Cosmog', 'Cosmoem', 'Solgaleo', 'Lunala', 'Necrozma', 'Magearna', 'Marshadow', 'Zeraora',
-			'Meltan', 'Melmetal', 'Zacian', 'Zamazenta', 'Eternatus', 'Zarude',
-		],
-		onValidateSet(set, format) {
-			if (this.gen < 7 && this.toID(set.item) === 'souldew') {
-				return [`${set.name || set.species} has Soul Dew, which is banned in ${format.name}.`];
-			}
+		name: 'Flat Rules',
+		desc: "The in-game Flat Rules: Adjust Level Down 50, Species Clause, Item Clause, -Mythical, -Restricted Legendary, Bring 6 Pick 3-6 depending on game type.",
+		ruleset: ['Obtainable','+Unobtainable', '+Past', 'Sketch Gen 8 Moves','Team Preview', 'Species Clause', 'Nickname Clause', 'Item Clause', 'Adjust Level Down = 50', 'Picked Team Size = Auto', 'Cancel Mod'],
+		banlist: ['Mythical', 'Restricted Legendary'],
 		},
-	},
 	minimalgbu: {
 		effectType: 'ValidatorRule',
 		name: 'Minimal GBU',
