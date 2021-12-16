@@ -65,6 +65,7 @@ export const Formats: FormatList = [
 		ruleset:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		['Flat Rules', '!! Adjust Level = 50', 'VGC Timer']
 =======
 		['Picked Team Size = 4','Team Preview',]
@@ -73,6 +74,10 @@ export const Formats: FormatList = [
 		['Picked Team Size = 4', 'Max Team Size = 6',
 		'Team Preview',]
 >>>>>>> parent of e57ea05b2 (Update formats.ts)
+=======
+		['Picked Team Size = 4', 'Max Team Size = 6',
+		'Team Preview',]
+>>>>>>> parent of e20223cc3 (Update formats.ts)
 	},
 
 ];
