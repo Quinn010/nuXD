@@ -60,6 +60,9 @@ export const Formats: FormatList = [
 		ruleset: ['Team Preview', 'Cancel Mod','HP Percentage Mod','Sleep Clause Mod', 'Dynamax Clause', 'Accuracy Moves Clause',],
 	},
 
+// Sw/Sh Doubles
+	///////////////////////////////////////////////////////////////////
+	
 	{
 		name: "[PokeMMO] vgc",
 
@@ -73,7 +76,6 @@ export const Formats: FormatList = [
 		// no restrictions, for serious (other than team preview)
 		ruleset: [
 		'Picked Team Size = 2', 'Max Team Size = 4',
-		'Team Preview', 'Cancel Mod','HP Percentage Mod','Sleep Clause Mod', 'Dynamax Clause','Accuracy Moves Clause'],
-		}
+		'Team Preview', 'Cancel Mod','HP Percentage Mod','Sleep Clause Mod', 'Dynamax Clause','Accuracy Moves Clause'],}
 
 ];
