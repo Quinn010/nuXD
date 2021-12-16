@@ -64,10 +64,15 @@ export const Formats: FormatList = [
 		gameType: 'doubles',
 		ruleset:
 <<<<<<< HEAD
+<<<<<<< HEAD
 		['Flat Rules', '!! Adjust Level = 50', 'VGC Timer']
 =======
 		['Picked Team Size = 4','Team Preview',]
 >>>>>>> e20223cc3964fa401ca4e7d6c0f3ebb182b1095c
+=======
+		['Picked Team Size = 4', 'Max Team Size = 6',
+		'Team Preview',]
+>>>>>>> parent of e57ea05b2 (Update formats.ts)
 	},
 
 ];
