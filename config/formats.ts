@@ -68,8 +68,9 @@ export const Formats: FormatList = [
 		mod: 'gen8',
 		gameType: 'doubles',
 		// no restrictions, for serious (other than team preview)
-		ruleset: ['Flat Rules', '!! Adjust Level = 50', 'Min Source Gen = 8', 'VGC Timer','Standard NatDex'],
+		ruleset: ['Flat Rules', '!! Adjust Level = 50','VGC Timer',],
 		},
+		
 
 
 ];
