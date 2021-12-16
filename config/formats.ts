@@ -64,7 +64,7 @@ export const Formats: FormatList = [
 
 		mod: 'gen8',
 		gameType: 'doubles',
-		ruleset: ['Flat Rules','VGC Timer',],
+		ruleset: ['Flat Rules',]
 	},
 
 ];
