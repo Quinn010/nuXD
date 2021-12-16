@@ -62,7 +62,9 @@ export const Formats: FormatList = [
 
 		mod: 'gen8',
 		gameType: 'doubles',
-		ruleset: ['Team Preview',]
+		ruleset:
+		['Picked Team Size = 4', 'Max Team Size = 6',
+		'Team Preview',]
 	},
 
 ];
