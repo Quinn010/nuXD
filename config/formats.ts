@@ -63,7 +63,11 @@ export const Formats: FormatList = [
 		mod: 'gen8',
 		gameType: 'doubles',
 		ruleset:
+<<<<<<< HEAD
 		['Flat Rules', '!! Adjust Level = 50', 'VGC Timer']
+=======
+		['Picked Team Size = 4','Team Preview',]
+>>>>>>> e20223cc3964fa401ca4e7d6c0f3ebb182b1095c
 	},
 
 ];
