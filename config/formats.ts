@@ -34,14 +34,19 @@ export const Formats: FormatList = [
 		ruleset: ['PotD', 'Obtainable', 'Species Clause', 'HP Percentage Mod', 'Cancel Mod', 'Sleep Clause Mod'],
 	},
 	{
+<<<<<<< HEAD
 		name: "[PokeMMO] Practice singles",
+=======
+		name: "[Gen 8] Custom Game",
+>>>>>>> parent of 3d6c5e38b (Update formats.ts)
 
 		mod: 'gen8',
 		debug: true,
 		battle: {trunc: Math.trunc},
 		// no restrictions, for serious (other than team preview)
-		ruleset: ['Team Preview', 'Cancel Mod','HP Percentage Mod','Sleep Clause Mod', 'Dynamax Clause', 'Accuracy Moves Clause'],
+		ruleset: ['Team Preview', 'Cancel Mod','HP Percentage Mod','Sleep Clause Mod'],
 	},
+<<<<<<< HEAD
 
 	{
 		name: "[PokeMMO] Practice doubles",
@@ -66,3 +71,6 @@ export const Formats: FormatList = [
 	}
 
 ];
+=======
+];
+>>>>>>> parent of 3d6c5e38b (Update formats.ts)
