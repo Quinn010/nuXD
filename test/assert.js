@@ -10,7 +10,8 @@
 
 'use strict';
 
-const assert = require('assert').strict;
+const legacyAssert = require('assert');
+const assert = legacyAssert.strict;
 const AssertionError = assert.AssertionError;
 
 assert.bounded = function (value, range, message) {
@@ -167,7 +168,7 @@ assert.constant = function (getter, fn, message) {
 };
 
 assert.sets = function (getter, value, fn, message) {
-	assert.notStrictEqual(getter(), value, `Function was prematurely equal to ${value}.`);
+	assert.notEqual(getter(), value, `Function was prematurely equal to ${value}.`);
 	fn();
 	const finalValue = getter();
 	if (finalValue === value) return;
@@ -179,6 +180,54 @@ assert.sets = function (getter, value, fn, message) {
 		stackStartFunction: assert.sets,
 	});
 };
+
+
+// .throws() does not currently work with Promises.
+assert.throwsAsync = async function (fn, message) {
+	try {
+		await fn();
+	} catch (e) {
+		return; // threw
+	}
+	throw new AssertionError({
+		message: message || `Expected function to throw an error.`,
+		stackStartFunction: assert.throwsAsync,
+	});
+};
+
+assert.doesNotThrowAsync = async function (fn, message) {
+	try {
+		await fn();
+	} catch (e) {
+		throw new AssertionError({
+			message: message || `Expected function not to throw an error.`,
+			stackStartFunction: assert.throwsAsync,
+		});
+	}
+};
+
+assert.strictEqual = () => {
+	throw new Error(`This API is deprecated; please use assert.equal()`);
+};
+assert.deepStrictEqual = () => {
+	throw new Error(`This API is deprecated; please use assert.deepEqual()`);
+};
+assert.notStrictEqual = () => {
+	throw new Error(`This API is deprecated; please use assert.notEqual()`);
+};
+assert.notDeepStrictEqual = () => {
+	throw new Error(`This API is deprecated; please use assert.notDeepEqual()`);
+};
+assert.ok = () => {
+	throw new Error(`This API is deprecated; please use assert()`);
+};
+for (const fn in legacyAssert) {
+	if (fn !== 'strict' && typeof legacyAssert[fn] === 'function') {
+		legacyAssert[fn] = () => {
+			throw new Error(`This API is deprecated; please use assert.strict`);
+		};
+	}
+}
 
 const assertMethods = Object.getOwnPropertyNames(assert).filter(methodName => (
 	methodName !== 'constructor' && methodName !== 'AssertionError' && typeof assert[methodName] === 'function'

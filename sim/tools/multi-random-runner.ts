@@ -36,13 +36,13 @@ export class MultiRandomRunner {
 	private readonly format: string | undefined;
 	private readonly cycle: boolean;
 	private readonly all: boolean;
-	private readonly async: boolean;
+	private readonly isAsync: boolean;
 
 	private formatIndex: number;
 	private numGames: number;
 
 	constructor(options: MultiRandomRunnerOptions) {
-		this.options = Object.assign({}, options);
+		this.options = {...options};
 
 		this.totalGames = options.totalGames;
 
@@ -54,7 +54,7 @@ export class MultiRandomRunner {
 		this.cycle = !!options.cycle;
 		this.all = !!options.all;
 
-		this.async = !!options.async;
+		this.isAsync = !!options.async;
 
 		this.formatIndex = 0;
 		this.numGames = 0;
@@ -65,15 +65,14 @@ export class MultiRandomRunner {
 		let format: string | false;
 		let lastFormat: string | false = false;
 		let failures = 0;
-		// tslint:disable-next-line no-conditional-assignment
 		while ((format = this.getNextFormat())) {
 			if (this.all && lastFormat && format !== lastFormat) {
-				if (this.async) await Promise.all(games);
+				if (this.isAsync) await Promise.all(games);
 				games = [];
 			}
 
 			const seed = this.prng.seed;
-			const game = new Runner(Object.assign({format}, this.options)).run().catch(err => {
+			const game = new Runner({format, ...this.options}).run().catch(err => {
 				failures++;
 				console.error(
 					`Run \`node tools/simulate multi 1 --format=${format} --seed=${seed.join()}\` ` +
@@ -82,12 +81,12 @@ export class MultiRandomRunner {
 				);
 			});
 
-			if (!this.async) await game;
+			if (!this.isAsync) await game;
 			games.push(game);
 			lastFormat = format;
 		}
 
-		if (this.async) await Promise.all(games);
+		if (this.isAsync) await Promise.all(games);
 		return failures;
 	}
 

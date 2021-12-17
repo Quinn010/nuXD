@@ -50,8 +50,6 @@ export const Formats: FormatList = [
 		gameType: 'doubles',
 		battle: {trunc: Math.trunc},
 		debug: true,
-		defaultLevel: 50,
-		maxLevel: 50,
 		// no restrictions, for serious (other than team preview)
 		ruleset: ['Team Preview', 'Cancel Mod','HP Percentage Mod','Sleep Clause Mod', 'Dynamax Clause', 'Accuracy Moves Clause',],
 	},
